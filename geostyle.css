@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 15px;
+    background-color: #3d609e;
+    z-index: 1000;
+}
+
+body::before {
+    left: 45px;
+    box-shadow: 0px 0px 2px 5px #f5b44c;
+}
+
+body::after {
+    right: 45px;
+    box-shadow: 0px 0px 2px 5px #f5b44c;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef1f5;
+    color: #263238;
+    line-height: 1.7;
+}
+
+
+
+#encabezado {
+    background-color: #172b4d;
+    color: white;
+    padding: 45px 100px;
+    text-align: center;
+
+    position: relative;
+    z-index: 1001;
+}
+
+#encabezado h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    
+}
+
+.datos {
+    color: #dce3ed;
+    font-size: 14px;
+}
+
+.datos p {
+    margin: 3px;
+}
+
+
+
+#indice {
+    background-color: white;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px 35px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0);
+}
+
+#indice h2,
+#indice h3 {
+    color: #172b4d;
+    margin-bottom: 12px;
+}
+
+#indice ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#indice li {
+    border-bottom: 1px solid #e5e8ec;
+    padding: 7px 0;
+}
+
+#indice a {
+    color: #345d91;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#indice a:hover {
+    color: #d49b42;
+    padding-left: 6px;
+}
+
+
+#contenido {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.parte {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+
+    scroll-margin-top: 20px;
+}
+
+.parte h2 {
+    color: #172b4d;
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #d49b42;
+}
+
+.parte p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+
+.parte img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 25px auto 0;
+    border-radius: 8px;
+}
+
+
+
+footer {
+    background-color: #172b4d;
+    color: #dce3ed;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 13px;
+
+    position: relative;
+    z-index: 1001;
+}
+
+
+.fondo {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.45;
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+@media (max-width: 1200px) {
+    body::before,
+    body::after {
+        display: none;
+    }
+
+}
